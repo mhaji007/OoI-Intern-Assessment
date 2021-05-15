@@ -1,12 +1,13 @@
 const CONSTANTS = require("./constants");
+require("dotenv").config();
 
 const { oneMegabyte } = CONSTANTS;
 
 module.exports = {
   environment: process.env.NODE_ENV || "development",
-  trustProxy: 1,
+  trustProxy: true,
   jsonSpaces: 2,
-  port: process.env.SERVER_PORT || 9000,
+  port: process.env.SERVER_PORT,
   urlencoded: {
     extended: false,
     limit: oneMegabyte,

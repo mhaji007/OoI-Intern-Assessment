@@ -1,10 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { Logger } = require("node-core-utils");
+const { Logger } = require("logger");
 const defaultConfig = require("./config");
 const { MongoDB } = require("./lib/db");
 const { logRequest } = require("./lib/middleware");
 const { API } = require("./lib/api");
+const timestamp = require("time-stamp");
+const process = require("process");
 
 class App {
   constructor(config) {
@@ -22,7 +24,7 @@ class App {
     this.environment = this.config.environment;
 
     this.server = express();
-    this.server.set("trust_proxy", this.config.trustProxy);
+    this.server.set("trust proxy", this.config.trustProxy);
     this.server.set("json spaces", this.config.jsonSpaces);
     this.server.use(bodyParser.urlencoded(this.config.urlencoded));
     this.server.use(bodyParser.json({ limit: this.config.uploadLimit }));
@@ -36,6 +38,7 @@ class App {
   start() {
     this.server.listen(this.config.port, () => {
       this.logger.info(`listening on http://localhost:${this.config.port}`);
+      this.logger.info(`StartTime:${timestamp("YYYY-MM-DD-HH:mm:ss:ms")}`);
     });
     this.logger.info(`started in ${this.environment}.`);
   }
@@ -46,7 +49,10 @@ class App {
   }
 
   async getStatus() {
-    return await this.db.models.Example.countDocuments();
+    // return await this.db.models.Example.countDocuments();
+    if (process.connected) {
+      return process.uptime();
+    }
   }
 }
 
