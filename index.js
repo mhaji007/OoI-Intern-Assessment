@@ -7,6 +7,11 @@ const { logRequest } = require("./lib/middleware");
 const { API } = require("./lib/api");
 const timestamp = require("time-stamp");
 const process = require("process");
+const cors = require("cors");
+
+// Import routes
+
+const authRoutes = require("./lib/routes/auth");
 
 class App {
   constructor(config) {
@@ -26,11 +31,13 @@ class App {
     this.server = express();
     this.server.set("trust proxy", this.config.trustProxy);
     this.server.set("json spaces", this.config.jsonSpaces);
+    this.server.use(cors());
     this.server.use(bodyParser.urlencoded(this.config.urlencoded));
     this.server.use(bodyParser.json({ limit: this.config.uploadLimit }));
     this.server.set("app", this);
     this.server.use("/api", this.logRequest);
     this.server.use("/api", API);
+    this.server.use("/api", authRoutes);
 
     this.logger.info(`Initialized`);
   }

@@ -1,0 +1,33 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  font-family:"now.regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Now-Light";
+  src: local("Now-Light"),
+    url("./fonts/Now-Light.otf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "now.regular";
+  src: local("now.regular"),
+    url("./fonts/now.regular.otf") format("truetype");
+  font-weight: normal;
+}
