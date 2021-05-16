@@ -71,9 +71,25 @@ export function RegisterForm() {
     <BoxContainer>
       <FormContainer>
         {success ? (
-          <MessageContainer type="success">{success}</MessageContainer>
+          <MessageContainer
+            animate={{ x: [0, -10, 10, -10, 10, 0] }}
+            transition={{
+              type: "spring",
+            }}
+            type="success"
+          >
+            {success}
+          </MessageContainer>
         ) : error ? (
-          <MessageContainer type="error">{error}</MessageContainer>
+          <MessageContainer
+            animate={{ x: [0, -10, 10, -10, 10, 0] }}
+            transition={{
+              type: "spring",
+            }}
+            type="error"
+          >
+            {error}
+          </MessageContainer>
         ) : (
           ""
         )}

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
 export const BoxContainer = styled.div`
   width: 100%;
@@ -81,7 +82,7 @@ export const SubmitButton = styled.button`
   }
 `;
 
-export const MessageContainer = styled.div`
+export const MessageContainer =  styled(motion.div)`
   background-color: ${({ type }) =>
     type && type === "error" ? ` #dc3545` : `#28a745`};
 
@@ -96,9 +97,4 @@ export const MessageContainer = styled.div`
   justify-content:center;
   align-items:center;
 
-  /* h6{
-    color: #fff;
-    padding: 0.1rem;
-    font-size:6px;
-  } */
 `;

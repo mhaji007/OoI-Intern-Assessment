@@ -25,7 +25,8 @@ export function LoginForm() {
   });
   const { switchToRegister } = useContext(AccountContext);
 
-  const { email, password, error, success, redirectToReferer, buttonText } = state;
+  const { email, password, error, success, redirectToReferer, buttonText } =
+    state;
 
   const handleChange = (name) => (e) => {
     setState({
@@ -79,9 +80,21 @@ export function LoginForm() {
     <BoxContainer>
       <FormContainer>
         {success ? (
-          <MessageContainer type="success">{success}</MessageContainer>
+          <MessageContainer
+            animate={{ x: [0, -10, 10, -10, 10, 0] }}
+            transition={{ type: "spring" }}
+            type="success"
+          >
+            {success}
+          </MessageContainer>
         ) : error ? (
-          <MessageContainer type="error">{error}</MessageContainer>
+          <MessageContainer
+            animate={{ x: [0, -10, 10, -10, 10, 0] }}
+            transition={{ type: "spring" }}
+            type="error"
+          >
+            {error}
+          </MessageContainer>
         ) : (
           ""
         )}
