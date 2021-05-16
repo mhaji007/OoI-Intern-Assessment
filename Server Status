@@ -1,0 +1,83 @@
+
+info [Sat May 15 2021 23:51:57 GMT-0400 (Eastern Daylight Time)]  Server Uptime:1227.487862 seconds
+info [Sat May 15 2021 23:54:23 GMT-0400 (Eastern Daylight Time)]  Server Uptime:1373.313192501 seconds
+info [Sat May 15 2021 23:54:24 GMT-0400 (Eastern Daylight Time)]  Server Uptime:1374.232417001 seconds
+info [Sat May 15 2021 23:54:25 GMT-0400 (Eastern Daylight Time)]  Server Uptime:1375.671904 seconds
+
+info [Sat May 15 2021 23:54:39 GMT-0400 (Eastern Daylight Time)]  Server Uptime:undefined seconds
+info [Sat May 15 2021 23:54:40 GMT-0400 (Eastern Daylight Time)]  Server Uptime:undefined seconds
+info [Sat May 15 2021 23:58:45 GMT-0400 (Eastern Daylight Time)]  Server Uptime:undefined seconds
+
+
+error [Sun May 16 2021 00:30:05 GMT-0400 (Eastern Daylight Time)]  TypeError: app.uptime is not a function
+    at D:\unicef\OoI-Intern-Assessment\lib\api\status\index.js:9:18
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:317:13)
+    at D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:174:3)
+error [Sun May 16 2021 00:30:06 GMT-0400 (Eastern Daylight Time)]  TypeError: app.uptime is not a function
+    at D:\unicef\OoI-Intern-Assessment\lib\api\status\index.js:9:18
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:317:13)
+    at D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:174:3)
+error [Sun May 16 2021 00:30:23 GMT-0400 (Eastern Daylight Time)]  TypeError: app.uptime is not a function
+    at D:\unicef\OoI-Intern-Assessment\lib\api\status\index.js:9:18
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:317:13)
+    at D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:174:3)
+error [Sun May 16 2021 00:30:25 GMT-0400 (Eastern Daylight Time)]  TypeError: app.uptime is not a function
+    at D:\unicef\OoI-Intern-Assessment\lib\api\status\index.js:9:18
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:317:13)
+    at D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\unicef\OoI-Intern-Assessment\node_modules\express\lib\router\index.js:174:3)
+
+info [Sun May 16 2021 00:30:36 GMT-0400 (Eastern Daylight Time)]  Server Uptime:5.5247448 seconds
+
+
